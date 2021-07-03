@@ -1,0 +1,58 @@
+$color-dark:#262626;
+$color-black:#000;
+$color-primary:#d3ab55;
+$color-text:#bbb;
+$color-white:#fff;
+
+$font-dancingScript:"Dancing Script",cursiv;
+$font-josefinSans:"Josefin Sans",sans-serif;
+$font-nunito:"Nunito",sans-serif;
+$font-sahel:Sahel;
+$font-Nastaliq:Nastaliq;
+
+@font-face{
+    font-family: Sahel;
+    src: url("../fonts/sahel/Sahel.eot") format("eot");
+    src: 
+    url("../fonts/sahel/Sahel.ttf") format("ttf"),
+    url("../fonts/sahel/Sahel.woff") format("woff")
+    ;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: Nastaliq;
+    src: url("../fonts/nastaliq/DimaNastalighTahriri.eot");
+    src: url("../fonts/nastaliq/DimaNastalighTahriri.ttf") format("ttf"),
+    url("../fonts/nastaliq/DimaNastalighTahriri.woff") format("woff");
+    font-weight: normal;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin textState() {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+@mixin textFamilyColor ($size:20px,$font:$font-sahel,$color:$color-text) {
+    font-family:$font;
+    font-size: $size;
+    color: $color;
+}
+@mixin columnCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
